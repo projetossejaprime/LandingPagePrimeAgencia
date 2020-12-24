@@ -1,0 +1,73 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .__btn {
+        max-width: unset !important;
+    }
+    /* ==========::Header::========== */
+    .__header .navbar-wpp {
+        display: flex;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .__header .navbar-wpp span {
+        font-size: 1rem;
+        margin-right: 5px;
+    }
+    /* ==========::Hero::========== */
+    .__hero-image {
+        height: 60%;
+    }
+    .__hero-text {
+        width: 90%;
+    }
+    .__hero-text h1 {
+        font-size: 1.4rem !important;
+    }
+    .__hero-text h1 strong {
+        font-size: inherit !important;
+    }
+    /* ==========::Hero::========== */
+    h2 {
+        font-size: 1.2rem !important;
+        width: 90% !important;
+        margin: 25px auto !important;
+    }
+    h2 span {
+        font-size: 1.2rem !important;
+    }
+    /* ==========::Cards Container::========== */
+    .__services-cards .__card-container .card {
+        width: 90% !important;
+        margin: 60px !important;
+    }
+    /* ==========::Testimony Section::========== */
+    .__testimony-section .__testimony-text-side .__text-box {
+        width: 100% !important;
+    }
+    .__testimony-text-side .__text-box p,
+    .__testimony-text-side .__text-box small {
+        font-size: 1.4rem !important;
+    }
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
