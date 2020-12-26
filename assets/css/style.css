@@ -79,7 +79,7 @@ html {
 /* ==============::Hero::============== */
 
 .__hero-image {
-    background-image: linear-gradient(var(--primary-transparent), var(--primary-transparent)), url("../images/mainHero_banner.jpg");
+    background-image: linear-gradient(var(--primary-transparent), var(--primary-transparent)), url("../images/main-hero_banner.jpg");
     height: 80%;
     background-attachment: fixed;
     background-position: center;
@@ -144,8 +144,17 @@ html {
 }
 
 .card-img-top {
-    width: 90px !important;
+    width: 70px !important;
     height: auto !important;
+    margin-bottom: 25px;
+}
+
+.card-title {
+    text-align: left;
+    font: normal normal bold 15px/20px Segoe UI;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
 }
 
 .__services-btn {
@@ -201,11 +210,12 @@ html {
 }
 
 
-/* ==============::know-more Section::============== */
+/* ==============::know-more Section::General Structure============== */
 
 .__know-more-section {
     background: #FFF;
     height: 70%;
+    max-height: 430px;
 }
 
 .__know-more-section .__know-more-image-side img {
@@ -215,7 +225,6 @@ html {
 
 .__know-more-section .__know-more-text-side .__text-box {
     width: 80%;
-    margin-bottom: 35px;
 }
 
 .__know-more-section .__know-more-text-side h3 {
@@ -227,4 +236,97 @@ html {
 .__know-more-section .__know-more-text-side p {
     color: #434343;
     font-size: 1.2rem;
+}
+
+
+/* ==============::know-more Section::First Impression::============== */
+
+.__first-impression {
+    background: rgb(98, 0, 255);
+    background: linear-gradient(90deg, rgba(98, 0, 255, 0.7) 0%, rgba(202, 77, 255, 0.7) 100%);
+}
+
+.__first-impression-text {
+    color: #FFF !important;
+}
+
+.__first-impression .__know-more-image-side {
+    position: relative;
+}
+
+.__first-impression .__know-more-image-side img {
+    width: 85%;
+    max-width: 500px;
+    position: absolute;
+    bottom: -50px;
+}
+
+
+/* ==============::know-more Section::Consulting form============== */
+
+.__form-consulting {
+    background: var(--primary-dark);
+    background-image: url(../images/12pw.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.__form-consulting .__know-more-form-side form {
+    background: #FFF;
+    width: 65%;
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.__form-consulting .__know-more-form-side form h4 {
+    color: #2C2C2C;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.__form-consulting .__know-more-form-side input,
+.__form-consulting .__know-more-form-side button {
+    border-radius: 0 !important;
+    padding: 10px;
+}
+
+.__form-consulting .__know-more-form-side button {
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none !important;
+    background: var(--primary-dark);
+}
+
+.__form-consulting .__know-more-form-side button:hover {
+    background: var(--primary);
+}
+
+
+/* ==============::know-more Section::Music prodution============== */
+
+.__music-prodution {
+    background: rgb(255, 214, 139);
+    background: linear-gradient(90deg, rgba(255, 214, 139, 1) 0%, rgba(251, 163, 0, 1) 100%);
+}
+
+.__music-prodution-btn {
+    color: #FFF;
+    background: var(--primary);
+}
+
+.__music-prodution-btn:hover {
+    color: #FFF;
+}
+
+.__music-prodution .__know-more-image-side {
+    position: relative;
+}
+
+.__music-prodution .__know-more-image-side img {
+    width: 70%;
+    max-width: 400px;
+    position: absolute;
+    bottom: 0;
 }

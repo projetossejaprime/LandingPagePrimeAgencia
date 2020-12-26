@@ -50,6 +50,51 @@
     .__testimony-text-side .__text-box small {
         font-size: 1.4rem !important;
     }
+    /* ==============::know-more Section::============== */
+    .__know-more-section {
+        height: auto;
+        max-height: none;
+    }
+    .__know-more-section .__know-more-image-side img {
+        margin: 35px auto 15px;
+    }
+    .__know-more-section .__know-more-text-side .__text-box {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .__know-more-section .__know-more-text-side h3 {
+        font-size: 1.6rem;
+    }
+    .__know-more-section .__know-more-text-side p {
+        font-size: 1rem;
+    }
+    /* ==============::know-more Section::First Impression::============== */
+    .__first-impression .__know-more-image-side img {
+        width: 80%;
+        margin: 35px auto 15px;
+        position: relative;
+        bottom: unset;
+    }
+    /* ==============::know-more Section::Consulting form============== */
+    .__form-consulting .__know-more-form-side {
+        padding: 0;
+    }
+    .__form-consulting .__know-more-form-side form {
+        width: 100%;
+        max-width: 330px;
+        border-radius: 0;
+        padding: 30px 20px;
+    }
+    /* ==============::know-more Section::Music prodution::============== */
+    .__music-prodution {
+        background: rgb(255, 214, 139) !important;
+    }
+    .__music-prodution .__know-more-image-side img {
+        width: 80%;
+        margin: 35px auto 15px;
+        position: relative;
+        bottom: unset;
+    }
 }
 
 
