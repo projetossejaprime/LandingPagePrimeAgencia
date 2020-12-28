@@ -28,19 +28,30 @@
     .__hero-text h1 strong {
         font-size: inherit !important;
     }
-    /* ==========::Hero::========== */
-    h2 {
+    /* ==========::Cards Container::========== */
+    .__services-cards h2 {
         font-size: 1.2rem !important;
         width: 90% !important;
         margin: 25px auto !important;
     }
-    h2 span {
+    .__services-cards h2 span {
         font-size: 1.2rem !important;
     }
-    /* ==========::Cards Container::========== */
-    .__services-cards .__card-container .card {
-        width: 90% !important;
-        margin: 60px !important;
+    .__services-cards .card {
+        width: 40% !important;
+        height: 160px;
+        min-width: unset !important;
+        margin: 10px !important;
+        padding: 15px;
+    }
+    .__services-cards .card .card-img-top {
+        width: 55px !important;
+        margin-bottom: 10px;
+    }
+    .__services-cards .card .card-title {
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
     }
     /* ==========::Testimony Section::========== */
     .__testimony-section .__testimony-text-side .__text-box {
@@ -69,6 +80,9 @@
         font-size: 1rem;
     }
     /* ==============::know-more Section::First Impression::============== */
+    .__first-impression {
+        background: rgb(187, 48, 251) !important;
+    }
     .__first-impression .__know-more-image-side img {
         width: 80%;
         margin: 35px auto 15px;
@@ -76,12 +90,23 @@
         bottom: unset;
     }
     /* ==============::know-more Section::Consulting form============== */
+    .__form-consulting {
+        background-size: cover;
+    }
+    .__form-consulting .container .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .__form-consulting .__know-more-image-side img {
+        position: relative;
+        bottom: unset;
+    }
     .__form-consulting .__know-more-form-side {
         padding: 0;
     }
     .__form-consulting .__know-more-form-side form {
         width: 100%;
-        max-width: 330px;
+        max-width: unset;
         border-radius: 0;
         padding: 30px 20px;
     }
@@ -95,17 +120,357 @@
         position: relative;
         bottom: unset;
     }
+    /* ==============::know-more Section::Press Office============== */
+    .__press-office {
+        background: rgb(213, 145, 245) !important;
+    }
+    .__press-office .__know-more-image-side img {
+        max-width: 300px;
+        position: relative;
+        bottom: unset;
+    }
+    /* ==============::know-more Section::Socials============== */
+    .__socials .__know-more-socials-side {
+        padding: 0 !important;
+    }
+    .__socials .__know-more-socials-side .__socials-box {
+        min-width: 280px;
+        max-width: 550px;
+        padding: 25px 0;
+        position: relative;
+        bottom: unset;
+    }
+    .__socials .__know-more-socials-side .__socials-box h4 {
+        font-size: 1.2rem;
+    }
+    .__socials .__know-more-socials-side .__socials-box .__socials-icons {
+        font-size: 3rem;
+    }
+    .__socials .__know-more-socials-side .__socials-box h5 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .__socials .__know-more-socials-side .__socials-box .__btn-socials {
+        min-width: 260px;
+        font-size: 1rem;
+    }
+    .__socials .__know-more-text-side ul {
+        padding: 35px 0 !important;
+    }
+    .__socials .__know-more-text-side .__socials-list {
+        margin-left: 0;
+        margin-bottom: 15px !important;
+    }
+    .__socials .__know-more-text-side .__socials-list span.mdi-check-bold {
+        font-size: 1.8rem;
+    }
+    .__socials .__know-more-text-side .__socials-list p {
+        font-size: 1rem;
+    }
+    /* ==============::know-more Section::City Banners============== */
+    .__city-banners {
+        padding: 80px 0;
+    }
+    .__city-banners .__know-more-text-side .__text-box h3 {
+        font-size: 1.4rem;
+    }
+    .__city-banners .__know-more-text-side .__text-box p {
+        font-size: 1rem;
+    }
+    /* =================Footer Celular=================*/
+    .container-fluid.copyright>h2 {
+        font-size: .8rem !important;
+        text-align: center;
+    }
 }
 
 
 /* // Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* ==========::Hero::========== */
+    .__hero-text h1 {
+        font-size: 2rem !important;
+    }
+    .__hero-text h1 strong {
+        font-size: inherit !important;
+    }
+    /* ==========::Cards Container::========== */
+    .__services-cards h2 {
+        width: 90% !important;
+        margin: 55px auto !important;
+    }
+    .__services-cards .card {
+        width: 30% !important;
+        height: 160px;
+        min-width: unset !important;
+        margin: 10px !important;
+        padding: 15px;
+    }
+    .__services-cards .card .card-img-top {
+        width: 55px !important;
+        margin-bottom: 10px;
+    }
+    .__services-cards .card .card-title {
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    /* ==========::Testimony Section::========== */
+    .__testimony-section .__testimony-text-side .__text-box {
+        width: 100% !important;
+    }
+    .__testimony-text-side .__text-box p,
+    .__testimony-text-side .__text-box small {
+        font-size: 1.2rem !important;
+    }
+    /* ==============::know-more Section::============== */
+    .__know-more-section {
+        min-height: 70%;
+        max-height: none;
+    }
+    .__know-more-section .__know-more-image-side img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .__know-more-section .__know-more-text-side .__text-box {
+        width: 100%;
+    }
+    .__know-more-section .__know-more-text-side h3 {
+        font-size: 1.4rem;
+    }
+    .__know-more-section .__know-more-text-side p {
+        font-size: .8rem;
+    }
+    /* ==============::know-more Section::First Impression::============== */
+    .__first-impression {
+        background: rgb(187, 48, 251) !important;
+    }
+    .__first-impression .__know-more-image-side img {
+        width: 80%;
+        margin: 35px auto 15px;
+        position: relative;
+        bottom: unset;
+    }
+    /* ==============::know-more Section::Consulting form============== */
+    .__form-consulting {
+        background-size: cover;
+    }
+    .__form-consulting .__know-more-image-side img {
+        position: relative;
+        bottom: unset;
+    }
+    .__form-consulting .__know-more-form-side {
+        padding: 0;
+    }
+    .__form-consulting .__know-more-form-side form {
+        width: 100%;
+        max-width: unset;
+        border-radius: 0;
+        padding: 30px 20px;
+    }
+    /* ==============::know-more Section::Music prodution::============== */
+    .__music-prodution {
+        background: rgb(255, 214, 139) !important;
+    }
+    .__music-prodution .__know-more-image-side img {
+        width: 120%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    /* ==============::know-more Section::Press Office============== */
+    .__press-office {
+        background: rgb(213, 145, 245) !important;
+    }
+    .__press-office .__know-more-image-side img {
+        max-width: 300px;
+        position: relative;
+        bottom: unset;
+    }
+    /* ==============::know-more Section::Socials============== */
+    .__socials .__know-more-socials-side {
+        padding: 0 !important;
+    }
+    .__socials .__know-more-socials-side .__socials-box {
+        min-width: 280px;
+        max-width: 550px;
+        padding: 25px 0;
+        position: relative;
+        bottom: unset;
+    }
+    .__socials .__know-more-socials-side .__socials-box h4 {
+        font-size: 1.2rem;
+    }
+    .__socials .__know-more-socials-side .__socials-box .__socials-icons {
+        font-size: 3rem;
+    }
+    .__socials .__know-more-socials-side .__socials-box h5 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .__socials .__know-more-socials-side .__socials-box .__btn-socials {
+        min-width: 260px;
+        font-size: 1rem;
+    }
+    .__socials .__know-more-text-side ul {
+        padding: 35px 0 !important;
+    }
+    .__socials .__know-more-text-side .__socials-list {
+        margin-left: 0;
+        margin-bottom: 15px !important;
+    }
+    .__socials .__know-more-text-side .__socials-list span.mdi-check-bold {
+        font-size: 1.8rem;
+    }
+    .__socials .__know-more-text-side .__socials-list p {
+        font-size: 1rem;
+    }
+}
 
 
 /* // Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* ==========::Hero::========== */
+    .__hero-text h1 {
+        font-size: 2rem !important;
+    }
+    .__hero-text h1 strong {
+        font-size: inherit !important;
+    }
+    /* ==========::Cards Container::========== */
+    .__services-cards h2 {
+        width: 90% !important;
+        margin: 55px auto !important;
+    }
+    .__services-cards .card {
+        width: 30% !important;
+        height: 160px;
+        min-width: unset !important;
+        margin: 10px !important;
+        padding: 15px;
+    }
+    .__services-cards .card .card-img-top {
+        width: 55px !important;
+        margin-bottom: 10px;
+    }
+    .__services-cards .card .card-title {
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    /* ==========::Testimony Section::========== */
+    .__testimony-section .__testimony-text-side .__text-box {
+        width: 100% !important;
+    }
+    .__testimony-text-side .__text-box p,
+    .__testimony-text-side .__text-box small {
+        font-size: 1.2rem !important;
+    }
+    /* ==============::know-more Section::============== */
+    .__know-more-section {
+        min-height: 80%;
+        max-height: none;
+    }
+    .__know-more-section .__know-more-image-side img {
+        margin: 35px auto 15px;
+    }
+    .__know-more-section .__know-more-text-side .__text-box {
+        width: 100%;
+    }
+    .__know-more-section .__know-more-text-side h3 {
+        font-size: 1.8rem;
+    }
+    .__know-more-section .__know-more-text-side p {
+        font-size: 1rem;
+    }
+    /* ==============::know-more Section::First Impression::============== */
+    .__first-impression {
+        background: rgb(187, 48, 251) !important;
+    }
+    .__first-impression .__know-more-image-side img {
+        width: 80%;
+        margin: 35px auto 15px;
+        position: relative;
+        bottom: unset;
+    }
+    /* ==============::know-more Section::Consulting form============== */
+    .__form-consulting {
+        background-size: cover;
+    }
+    .__form-consulting .__know-more-image-side img {
+        position: relative;
+        bottom: unset;
+    }
+    .__form-consulting .__know-more-form-side {
+        padding: 0;
+    }
+    .__form-consulting .__know-more-form-side form {
+        width: 100%;
+        max-width: unset;
+        border-radius: 0;
+        padding: 30px 20px;
+    }
+    /* ==============::know-more Section::Music prodution::============== */
+    .__music-prodution {
+        background: rgb(255, 214, 139) !important;
+    }
+    .__music-prodution .__know-more-image-side img {
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+    }
+    /* ==============::know-more Section::Press Office============== */
+    .__press-office {
+        background: rgb(213, 145, 245) !important;
+    }
+    .__press-office .__know-more-image-side img {
+        max-width: 300px;
+        position: relative;
+        bottom: unset;
+    }
+    /* ==============::know-more Section::Socials============== */
+    .__socials .__know-more-socials-side {
+        padding: 0 !important;
+    }
+    .__socials .__know-more-socials-side .__socials-box {
+        min-width: 280px;
+        max-width: 550px;
+        padding: 25px 0;
+        position: relative;
+        bottom: unset;
+    }
+    .__socials .__know-more-socials-side .__socials-box h4 {
+        font-size: 1.2rem;
+    }
+    .__socials .__know-more-socials-side .__socials-box .__socials-icons {
+        font-size: 3rem;
+    }
+    .__socials .__know-more-socials-side .__socials-box h5 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .__socials .__know-more-socials-side .__socials-box .__btn-socials {
+        min-width: 260px;
+        font-size: 1rem;
+    }
+    .__socials .__know-more-text-side ul {
+        padding: 35px 0 !important;
+    }
+    .__socials .__know-more-text-side .__socials-list {
+        margin-left: 0;
+        margin-bottom: 15px !important;
+    }
+    .__socials .__know-more-text-side .__socials-list span.mdi-check-bold {
+        font-size: 1.8rem;
+    }
+    .__socials .__know-more-text-side .__socials-list p {
+        font-size: 1rem;
+    }
+}
 
 
 /* // Large devices (desktops, 992px and up) */
