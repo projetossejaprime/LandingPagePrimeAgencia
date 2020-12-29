@@ -7,20 +7,53 @@
     <title>Prime Agência | Bem Vindo!</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg  __header">
-        <div class="container flex-row h-100">
-            <a class="navbar-brand" href="https://sejaprime.com.br/primeagencia/"><img src="assets/images/logo.png" alt="Prime Agência Digital"></a>
+    <!-- Header -->
 
-            <a class="navbar-wpp" href=""> <span class="mdi mdi-whatsapp"></span> (48) 9 9999-9999</a>
+    <header class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="https://sejaprime.com.br/primeagencia">
+            <img class="img-responsive prime-logo" src="assets/images/logo.png" alt="Prime Agência Digital">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-left ul-navbar-header">
+                <li class="nav-item li-navbar">
+                    <a class="nav-link" href="https://sejaprime.com.br/primeagencia/#quem-somos">Sobre</a>
+                </li>
+                <li class="nav-item li-navbar">
+                    <a class="nav-link" href="https://sejaprime.com.br/primeagencia/#o-que-fazemos">O que fazemos</a>
+                </li>
+                <li class="nav-item li-navbar">
+                    <a class="nav-link" href="https://sejaprime.com.br/primeagencia/#depoimentos">Depoimentos</a>
+                </li>
+                <li class="nav-item li-navbar">
+                    <a class="nav-link" href="https://sejaprime.com.br/primeagencia/#vantagens">Vantagens</a>
+                </li>
+                <li class="nav-item li-navbar">
+                    <a class="nav-link" href="https://sejaprime.com.br/primeagencia/blog/">Blog</a>
+                </li>
+                <li class="nav-item li-navbar icon">
+                    <a class="nav-link" href="#"><i class="mdi mdi-facebook"></i></a>
+                </li>
+                <li class="nav-item li-navbar nav-cliente">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target=".modal-formulario">Solicite Atendimento</a>
+                </li>
+            </ul>
         </div>
     </header>
+    <div class="__fakeheader"></div>
 
     <main class="__hero-image">
         <div class="__hero-text">
@@ -357,8 +390,63 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    </script>
+    <!-- MODALS -->
+
+    <div class="modal fade modal-formulario" tabindex="-1" role="dialog" aria-labelledby="modalFormulario" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="col-lg-12 modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="row d-flex flex-row-resp">
+                    <div class="col-md-6 col-lg-6 pl-xs-2 pr-xs-2 text-box">
+                        <h2 class="mb-4">Monte seu site conosco!</h2>
+                        <p>
+                            Informe os dados no formulário ao lado para que um de nossos consultores entre em contato com você!
+                        </p>
+                        <a class="__btn-modal-wpp" href="https://api.whatsapp.com/send?phone=5548996761601&text=Quero+garantir+as+minhas+vendas" target="_blank">Whatsapp</a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 form-box">
+                        <form class="full-form" action="#" method="post" autocomplete="off">
+                            <input type="hidden" name="origin" value="Visite Laguna" />
+                            <input type="hidden" name="formType" value="full-data" />
+                            <label for="input_company">Empresa:</label>
+                            <input id="input_company" type="text" name="company_name" placeholder="Digite o nome da sua empresa" data-valid="false" data-label="Empresa" required />
+
+                            <label for="input_name">Nome:</label>
+                            <input id="input_name" data-valid="false" data-label="Nome" type="text" name="name" placeholder="Seu nome" />
+
+                            <label for="input_email">Email:</label>
+                            <input id="input_email" type="email" name="email" placeholder="Seu e-mail" data-valid="false" data-label="E-mail" required />
+
+                            <label for="input_phone">Telefone/Whatsapp:</label>
+                            <input id="input_phone" type="tel" name="telephone" placeholder="Telefone ou WhatsApp para contato" data-valid="false" data-label="Telefone/WhatsApp" required />
+
+                            <button onclick="gtag_report_conversion()" type="button" name="submit">Enviar</button>
+                        </form>
+
+                        <div class="form-labels">
+                            <div class="label">
+                                <img src="assets/images/form-label-1.png" alt="Selo SSL de proteção">
+                            </div>
+                            <div class="label">
+                                <img src="assets/images/form-label-2.png" alt="Selo HOST de proteção">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({

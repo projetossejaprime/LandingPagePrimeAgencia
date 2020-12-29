@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
+    outline: none;
 }
 
 :root {
     --primary-dark: #261063;
-    --primary: #3A1994;
+    --primary: #3A1994 !important;
     --primary-light: #6338DB;
     --primary-transparent-dark: #3a1994ea;
     --primary-transparent: #3a1994d2;
@@ -16,6 +17,10 @@
 body,
 html {
     height: 100%;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 .__btn-default {
@@ -69,33 +74,114 @@ html {
 
 /* ==============::Header::============== */
 
-.__header {
-    background: var(--primary-dark);
+.__fakeheader {
     height: 80px;
 }
 
-.__header .navbar-brand {
-    width: auto;
+.navbar {
+    text-transform: uppercase;
+    background: var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.3) 0 5px 20px 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 30px;
+    position: fixed !important;
+    z-index: 50;
+    transition: .2s ease-in-out !important;
+}
+
+@media (min-width: 1024px) {
+    .navbar:hover {
+        height: 100px !important;
+        background: var(--primary-dark);
+    }
+}
+
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
 }
 
-.__header .navbar-brand img {
+.navbar .navbar-brand .prime-logo {
     width: auto;
     height: 45px;
 }
 
-.__header .navbar-wpp {
+.navbar-collapse .ul-navbar-header .li-navbar {
     display: flex;
     align-items: center;
-    color: #FFF;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none;
+    justify-content: center;
+    height: 80px;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    margin: auto;
+    padding: 0 15px;
+    transition: .2s ease-in-out;
 }
 
-.__header .navbar-wpp span {
-    font-size: 2rem;
-    margin-right: 15px;
+.navbar-collapse .ul-navbar-header .li-navbar:hover {
+    background-color: var(--primary-transparent-dark);
+    height: 100px;
+    border-bottom: 5px solid #FFF !important;
+    border-top: 5px solid var(--primary-light) !important;
+}
+
+.navbar-collapse .ul-navbar-header .li-navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif' !important;
+    height: 100%;
+    transition: .2s ease-in-out;
+}
+
+.navbar-collapse .ul-navbar-header li.nav-cliente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-collapse .ul-navbar-header li.nav-cliente:hover {
+    background-color: unset !important;
+    border-top: 5px solid transparent !important;
+    border-bottom: 5px solid transparent !important;
+}
+
+.navbar-collapse .ul-navbar-header li.nav-cliente a {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal !important;
+    text-align: center;
+    color: #000 !important;
+    background-color: #FFF !important;
+    height: 40px !important;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    padding: 10px 10px!important;
+}
+
+.navbar-collapse .ul-navbar-header li.nav-cliente a:hover {
+    color: #FFF !important;
+    background-color: unset !important;
+}
+
+.navbar-collapse .ul-navbar-header li.li-navbar.icon {
+    margin: auto !important;
+    padding: 0 !important;
+}
+
+.navbar-collapse .ul-navbar-header li.li-navbar.icon .mdi-facebook {
+    display: flex;
+    color: #FFF !important;
+    font-size: 2rem !important;
+    text-align: center;
+    border-radius: 3px;
+    width: auto;
+    transition: .2s ease-out;
 }
 
 

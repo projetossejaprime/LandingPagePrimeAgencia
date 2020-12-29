@@ -5,15 +5,39 @@
         max-width: unset !important;
     }
     /* ==========::Header::========== */
-    .__header .navbar-wpp {
-        display: flex;
-        font-size: 1rem;
-        font-weight: 600;
-        text-decoration: none;
+    .__fakeheader {
+        display: none;
+        height: 0;
     }
-    .__header .navbar-wpp span {
-        font-size: 1rem;
-        margin-right: 5px;
+    .navbar {
+        height: auto !important;
+        padding: 20px !important;
+        position: relative !important;
+    }
+    .navbar-collapse .ul-navbar-header .li-navbar {
+        justify-content: start !important;
+        width: 100% !important;
+        height: 40px !important;
+        border-bottom: none !important;
+        border-top: none !important;
+    }
+    .navbar-collapse .ul-navbar-header .li-navbar:hover {
+        height: 40px !important;
+        border-bottom: none !important;
+        border-top: none !important;
+    }
+    .navbar-collapse .ul-navbar-header .li-navbar a {
+        justify-content: start !important;
+        width: 100% !important;
+    }
+    .navbar-collapse .ul-navbar-header li.nav-cliente {
+        margin-top: 35px;
+    }
+    .navbar-collapse .ul-navbar-header li.nav-cliente a {
+        justify-content: center !important;
+    }
+    .navbar-collapse .ul-navbar-header li.li-navbar.icon {
+        padding: 0 15px !important;
     }
     /* ==========::Hero::========== */
     .__hero-image {
@@ -422,6 +446,36 @@
 /* // Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    /* ==========::Header::========== */
+    .navbar {
+        height: auto !important;
+        padding: 20px !important;
+    }
+    .navbar-collapse .ul-navbar-header .li-navbar {
+        justify-content: start !important;
+        width: 100% !important;
+        height: 40px !important;
+        border-bottom: none !important;
+        border-top: none !important;
+    }
+    .navbar-collapse .ul-navbar-header .li-navbar:hover {
+        height: 40px !important;
+        border-bottom: none !important;
+        border-top: none !important;
+    }
+    .navbar-collapse .ul-navbar-header .li-navbar a {
+        justify-content: start !important;
+        width: 100% !important;
+    }
+    .navbar-collapse .ul-navbar-header li.nav-cliente {
+        margin-top: 35px;
+    }
+    .navbar-collapse .ul-navbar-header li.nav-cliente a {
+        justify-content: center !important;
+    }
+    .navbar-collapse .ul-navbar-header li.li-navbar.icon {
+        padding: 0 15px !important;
+    }
     /* ==========::Hero::========== */
     .__hero-text h1 {
         font-size: 2rem !important;
@@ -588,13 +642,3 @@
         font-size: 1rem;
     }
 }
-
-
-/* // Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) and (max-width: 1199.98px) {}
-
-
-/* // Extra large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {}
