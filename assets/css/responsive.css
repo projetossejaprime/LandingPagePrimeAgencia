@@ -54,6 +54,14 @@
         text-align: center;
     }
     /* ==========::Testimony Section::========== */
+    .__testimony-section {
+        height: auto;
+        max-height: unset;
+        padding: 60px 0;
+    }
+    .__testimony-section .__testimony-image-side img {
+        margin-bottom: 45px;
+    }
     .__testimony-section .__testimony-text-side .__text-box {
         width: 100% !important;
     }

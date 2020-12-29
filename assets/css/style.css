@@ -205,18 +205,15 @@ html {
 /* ==============::Testimony Section::============== */
 
 .__testimony-section {
-    background: var(--primary-transparent);
+    background: var(--primary-transparent-dark) url(../images/sound-mixer_banner.png) center/cover no-repeat;
     height: 70%;
     max-height: 500px;
 }
 
-.__testimony-section .__testimony-image-side .__testimony-image-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 80%;
-    height: 80%;
+.__testimony-section .__testimony-image-side img {
+    min-width: 280px;
+    width: 70%;
+    max-width: 380px;
 }
 
 .__testimony-section .__testimony-text-side .__text-box {
