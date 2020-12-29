@@ -253,6 +253,11 @@
         text-align: center;
     }
     /* ==========::Testimony Section::========== */
+    .__testimony-section {
+        padding: 45px 0;
+        height: auto;
+        max-height: unset;
+    }
     .__testimony-section .__testimony-text-side .__text-box {
         width: 100% !important;
     }
@@ -262,8 +267,8 @@
     }
     /* ==============::know-more Section::============== */
     .__know-more-section {
-        min-height: 70%;
-        max-height: none;
+        height: 80% !important;
+        max-height: 330px !important;
     }
     .__know-more-section .__know-more-image-side img {
         width: 100%;
@@ -303,7 +308,16 @@
         width: 100%;
         max-width: unset;
         border-radius: 0;
-        padding: 30px 20px;
+        padding: 15px 20px;
+    }
+    .__form-consulting .__know-more-form-side form h4 {
+        font-size: .8rem;
+    }
+    .__form-consulting .__know-more-form-side form input {
+        font-size: .8rem;
+    }
+    .__form-consulting .__know-more-form-side form button {
+        font-size: .8rem;
     }
     /* ==============::know-more Section::Music prodution::============== */
     .__music-prodution {
@@ -326,6 +340,10 @@
         bottom: unset;
     }
     /* ==============::know-more Section::Socials============== */
+    .__socials {
+        height: auto !important;
+        max-height: unset !important;
+    }
     .__socials .__know-more-socials-side {
         padding: 0 !important;
     }
@@ -337,13 +355,13 @@
         bottom: unset;
     }
     .__socials .__know-more-socials-side .__socials-box h4 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .__socials .__know-more-socials-side .__socials-box .__socials-icons {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .__socials .__know-more-socials-side .__socials-box h5 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: bold;
     }
     .__socials .__know-more-socials-side .__socials-box .__btn-socials {
@@ -362,6 +380,13 @@
     }
     .__socials .__know-more-text-side .__socials-list p {
         font-size: 1rem;
+    }
+    /* ==============::know-more Section::City Banner============== */
+    .__city-banners h3 {
+        font-size: 1.6rem !important;
+    }
+    .__city-banners p {
+        font-size: 1rem !important;
     }
     /* ==============::::FORM PAGE::::============== */
     .__form-page-section {
